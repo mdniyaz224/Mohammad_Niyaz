@@ -40,7 +40,7 @@ export default function Footer() {
             <Linkedin className="w-5 h-5" />
           </Button>
         </a>
-        <a href="mailto:your-email@example.com">
+        <a href="mailto:mdniyaz1842000@gmail.com">
           <Button variant="ghost" size="icon">
             <Mail className="w-5 h-5" />
           </Button>
