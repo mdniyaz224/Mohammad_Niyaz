@@ -30,7 +30,7 @@ export default function Footer() {
   return (
     <footer className="w-full p-4 text-center">
       <div className="flex justify-center space-x-4">
-        <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/mdniyaz224" target="_blank" rel="noopener noreferrer">
           <Button variant="ghost" size="icon">
             <Github className="w-5 h-5" />
           </Button>
