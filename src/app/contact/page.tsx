@@ -10,7 +10,7 @@ import { motion } from 'framer-motion'; // Import framer-motion for animations
 import { Loader2 } from 'lucide-react';
 
 const ContactSection = () => {
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
 
   // Form validation schema using Yup
   const formSchema = Yup.object().shape({
@@ -19,7 +19,8 @@ const ContactSection = () => {
     message: Yup.string().required('Message is required'),
   });
 
-  const handleSubmit = (values: unknown, { setSubmitting }: any) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const handleSubmit = (values: unknown, setSubmitting:any) => {
     console.log(values);
     setTimeout(() => {
       setIsSubmitted(true);
