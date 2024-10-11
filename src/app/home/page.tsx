@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 // /components/sections/HomeSection.tsx
 import { motion } from 'framer-motion';
 import { Canvas } from '@react-three/fiber';
