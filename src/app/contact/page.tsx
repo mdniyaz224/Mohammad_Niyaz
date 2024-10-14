@@ -1,16 +1,11 @@
-/* eslint-disable react/jsx-no-undef */
 'use client';
-// /app/sections/ContactSection.tsx
-import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from "@/components/ui/card";
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import { motion } from 'framer-motion'; // Import framer-motion for animations
-import { Loader2 } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const ContactSection = () => {
-  const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
 
   // Form validation schema using Yup
   const formSchema = Yup.object().shape({
@@ -20,12 +15,8 @@ const ContactSection = () => {
   });
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const handleSubmit = (values: unknown, setSubmitting:any) => {
-    console.log(values);
-    setTimeout(() => {
-      setIsSubmitted(true);
-      setSubmitting(false);
-    }, 2000);  // Simulating async submission (e.g. API call)
+  const handleSubmit = (values: any) => {
+    console.log(values,"values")
   };
 
   // Define the animation for bottom-to-top loading
@@ -50,7 +41,7 @@ const ContactSection = () => {
             validationSchema={formSchema}
             onSubmit={handleSubmit}
           >
-            {({ isSubmitting }) => (
+            {() => (
               <Form className="space-y-4">
                 <motion.div
                   initial={{ opacity: 0, y: 50 }}
@@ -127,30 +118,14 @@ const ContactSection = () => {
                   <Button
                     type="submit"
                     className="bg-purple-600 hover:bg-purple-700 w-full flex justify-center items-center"
-                    disabled={isSubmitting}
+                    
                   >
-                    {isSubmitting ? (
-                      <>
-                        <Loader2 className="animate-spin mr-2" /> Sending...
-                      </>
-                    ) : (
-                      "Send Message"
-                    )}
+                    Send
                   </Button>
                 </motion.div>
               </Form>
             )}
           </Formik>
-          {isSubmitted && (
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="text-center text-gray-300 mt-4"
-            >
-              Thank you for contacting us!
-            </motion.p>
-          )}
         </CardContent>
       </Card>
     </motion.div>
