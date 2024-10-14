@@ -14,8 +14,7 @@ const ContactSection = () => {
     message: Yup.string().required('Message is required'),
   });
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const handleSubmit = (values: any) => {
+  const handleSubmit = (values:{name:string,email:string,message:string}) => {
     console.log(values,"values")
   };
 
