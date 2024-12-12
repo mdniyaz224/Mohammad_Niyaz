@@ -16,7 +16,7 @@ export function HeroSection() {
       <div className="space-y-6 md:w-1/2" data-aos="fade-right">
         <p className="text-white text-xl">Hi, It&apos;s me</p>
         <h1 className="text-white text-5xl md:text-6xl font-bold">Md Niyaz</h1>
-        <p className="text-2xl md:text-3xl">
+        <p className="text-2xl text-white md:text-3xl">
           And I&apos;m a{" "}
           <span className="text-orange-500">Full Stack Developer</span>
         </p>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 import img from '../../../public/asset/about.jpg'
 
 type TeamMember = {
@@ -49,8 +49,48 @@ const teamMembers: TeamMember[] = [
   },
 ];
 
+// export function MyTeam() {
+//   // const route = useRouter();
+//   return (
+//     <section className="w-full max-w-7xl mx-auto px-4 py-16">
+//       <div className="text-center mb-12">
+//         <h2 className="text-3xl font-bold text-white">
+//           My <span className="text-orange-500">Team</span>
+//         </h2>
+//         <div className="w-24 h-1 bg-orange-500 mx-auto mt-2" />
+//       </div>
+
+//       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+//         {teamMembers.map((member) => (
+//           <Card
+//             key={member.id}
+//             className="bg-purple-800/50 border-purple-700 overflow-hidden group cursor-pointer"
+//             // onClick={() => route.push(`project/${member.id}`)}
+//           >
+//             <CardContent className="p-0">
+//               <div className="relative h-80">
+//                 <Image
+//                   src={member.image as unknown as string}
+//                   alt={member.name}
+//                   fill
+//                   className="object-cover"
+//                 />
+//                 <div className="absolute inset-0 bg-gradient-to-t from-purple-900 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+//                 <div className="absolute inset-x-0 bottom-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+//                   <h3 className="text-xl font-semibold text-white mb-2">{member.name}</h3>
+//                   <p className="text-orange-500 mb-4">{member.role}</p>
+//                   <p className="text-white/90 text-sm">{member.bio}</p>
+//                 </div>
+//               </div>
+//             </CardContent>
+//           </Card>
+//         ))}
+//       </div>
+//     </section>
+//   );
+// }
+
 export function MyTeam() {
-  const route = useRouter();
   return (
     <section className="w-full max-w-7xl mx-auto px-4 py-16">
       <div className="text-center mb-12">
@@ -65,7 +105,6 @@ export function MyTeam() {
           <Card
             key={member.id}
             className="bg-purple-800/50 border-purple-700 overflow-hidden group cursor-pointer"
-            onClick={() => route.push(`project/${member.id}`)}
           >
             <CardContent className="p-0">
               <div className="relative h-80">
@@ -75,8 +114,23 @@ export function MyTeam() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-purple-900 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="absolute inset-x-0 bottom-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                {/* Gradient Overlay */}
+                <div
+                  className="
+                    absolute inset-0 bg-gradient-to-t 
+                    from-purple-900 to-transparent 
+                    opacity-100 md:opacity-0 md:group-hover:opacity-100 
+                    transition-opacity duration-300
+                  "
+                />
+                {/* Content */}
+                <div
+                  className="
+                    absolute inset-x-0 bottom-0 p-6 
+                    translate-y-0 md:translate-y-full md:group-hover:translate-y-0 
+                    transition-transform duration-300
+                  "
+                >
                   <h3 className="text-xl font-semibold text-white mb-2">{member.name}</h3>
                   <p className="text-orange-500 mb-4">{member.role}</p>
                   <p className="text-white/90 text-sm">{member.bio}</p>
@@ -89,3 +143,4 @@ export function MyTeam() {
     </section>
   );
 }
+

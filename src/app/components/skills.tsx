@@ -18,7 +18,6 @@ export function Skills() {
     { name: "Mongo Db", percentage: 95 },
     { name: "Git", percentage: 80 },
     { name: "Jira", percentage: 90 },
-    
   ];
 
   return (
@@ -37,9 +36,10 @@ export function Skills() {
               <span>{skill.name}</span>
               <span>{skill.percentage}%</span>
             </div>
-            <Progress 
-              value={skill.percentage} 
-              className="h-2 bg-purple-800"
+          
+            <Progress
+              value={skill.percentage}
+              className="h-2 bg-purple-800 [&>div]:bg-orange-500"
               aria-label={`${skill.name} skill level`}
             />
           </div>
