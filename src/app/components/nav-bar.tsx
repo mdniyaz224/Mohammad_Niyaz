@@ -93,6 +93,7 @@ export function NavBar() {
               {item}
             </button>
           ))}
+          
         </div>
 
         <div className="md:hidden">
@@ -105,7 +106,13 @@ export function NavBar() {
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-purple-900 text-white">
               <nav className="flex flex-col space-y-4 mt-8">
+              <Button variant="outline" className="bg-white text-purple-900 hover:bg-white/90  md:inline-flex"
+        onClick={()=> setOpen(true)}
+        >
+          Hire me
+        </Button>
                 {navItems.map((item) => (
+                  
                   <button
                     key={item}
                     onClick={() => scrollToSection(item.toLowerCase())}
@@ -118,8 +125,10 @@ export function NavBar() {
                   </button>
                 ))}
               </nav>
+              
             </SheetContent>
           </Sheet>
+          
         </div>
 
         <Button variant="outline" className="bg-white text-purple-900 hover:bg-white/90 hidden md:inline-flex"
