@@ -7,8 +7,8 @@ import "aos/dist/aos.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "MD RIEAD MIA - Frontend Developer",
-  description: "Personal portfolio website of MD RIEAD MIA, Frontend Developer",
+  title: "Mohammad Niyaz - Full Stack Developer",
+  description: "Personal portfolio website of Mohammad Niyaz, Full Stack Developer",
 }
 
 export default function RootLayout({
