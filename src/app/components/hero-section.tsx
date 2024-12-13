@@ -1,7 +1,5 @@
-// import { Button } from "@/components/ui/button"
 import { Facebook, Instagram, Linkedin, Github, ChevronDown } from 'lucide-react'
 import Image from "next/image"
-// import cv from ''
 
 export function HeroSection() {
   const scrollToAbout = () => {
@@ -21,15 +19,15 @@ export function HeroSection() {
           <span className="text-orange-500">Full Stack Developer</span>
         </p>
         <p className="text-white/80 max-w-lg">
-        Designing intuitive interfaces with precision.
-        Crafting seamless user experiences with passion.
+          Designing intuitive interfaces with precision.
+          Crafting seamless user experiences with passion.
         </p>
-        
+
         <div className="flex space-x-4">
           <a href="#" className="text-white hover:text-orange-500 transition-colors">
             <Facebook className="w-6 h-6" />
           </a>
-          <a href="https://www.linkedin.com/in/md-niyaz/"target='_blank' className="text-white hover:text-orange-500 transition-colors">
+          <a href="https://www.linkedin.com/in/md-niyaz/" target='_blank' className="text-white hover:text-orange-500 transition-colors">
             <Linkedin className="w-6 h-6" />
           </a>
           <a href="https://github.com/mdniyaz224" target='_blank' className="text-white hover:text-orange-500 transition-colors">
@@ -41,12 +39,14 @@ export function HeroSection() {
         </div>
 
         <a
-          href="public\asset\latestcv.pdf"
+          href="/asset/latestcv.pdf"
           download="Md_Niyaz_CV.pdf"
           className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded inline-flex justify-center items-center transition-colors"
         >
           Download CV
         </a>
+
+
       </div>
 
       <div className="md:w-1/2 mt-8 md:mt-0" data-aos="fade-left">
@@ -60,7 +60,7 @@ export function HeroSection() {
         />
       </div>
 
-      <button 
+      <button
         onClick={scrollToAbout}
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce"
         aria-label="Scroll to About section"
