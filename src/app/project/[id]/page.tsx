@@ -14,6 +14,31 @@ import img5 from '../../../../public/asset/websiteImgs/event1.png'
 import img6 from '../../../../public/asset/websiteImgs/event2.png'
 import img7 from '../../../../public/asset/websiteImgs/event3.png'
 import img8 from '../../../../public/asset/websiteImgs/event4.png'
+import user1 from '../../../../public/asset/websiteImgs/user1.png'
+import user2 from '../../../../public/asset/websiteImgs/user2.png'
+import user3 from '../../../../public/asset/websiteImgs/user3.png'
+import user4 from '../../../../public/asset/websiteImgs/user4.png'
+import user5 from '../../../../public/asset/websiteImgs/user5.png'
+import user6 from '../../../../public/asset/websiteImgs/user6.png'
+import user7 from '../../../../public/asset/websiteImgs/user7.png'
+import user8 from '../../../../public/asset/websiteImgs/user8.png'
+import admin1 from '../../../../public/asset/websiteImgs/admin1.png'
+import admin2 from '../../../../public/asset/websiteImgs/admin2.png'
+import admin3 from '../../../../public/asset/websiteImgs/admin3.png'
+import admin4 from '../../../../public/asset/websiteImgs/admin4.png'
+import admin5 from '../../../../public/asset/websiteImgs/admin5.png'
+import admin6 from '../../../../public/asset/websiteImgs/admin6.png'
+import admin7 from '../../../../public/asset/websiteImgs/admin7.png'
+import admin8 from '../../../../public/asset/websiteImgs/admin8.png'
+import admin9 from '../../../../public/asset/websiteImgs/admin9.png'
+import admin10 from '../../../../public/asset/websiteImgs/admin10.png'
+import c1 from '../../../../public/asset/websiteImgs/catalyst1.png'
+import c2 from '../../../../public/asset/websiteImgs/catalyst2.png'
+import c3 from '../../../../public/asset/websiteImgs/catalyst3.png'
+import c4 from '../../../../public/asset/websiteImgs/catalyst4.png'
+import c5 from '../../../../public/asset/websiteImgs/catalyst5.png'
+import c6 from '../../../../public/asset/websiteImgs/catalyst6.png'
+import c7 from '../../../../public/asset/websiteImgs/catalyst7.png'
 
 
 const projects = [
@@ -65,14 +90,19 @@ const projects = [
       "Personalized recommendations based on activity",
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1506765515384-028b60a970df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-      "https://images.unsplash.com/photo-1515378791036-0648a3ef77b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      user1,
+      user2,
+      user3,
+      user4,
+      user5,
+      user6,
+      user7,
+      user8,
     ],
   },
   {
     id: "lacrosse-admin",
-    title: "Lacrosse Game Website",
+    title: "Lacrosse Game Admin",
     image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80",
     description: "A comprehensive lacrosse game website and web application with distinct functionalities for admin and user roles.",
     technologies: ["Next.js", "Redux-Saga", "TypeScript", "Material-UI (MUI)"],
@@ -89,35 +119,56 @@ const projects = [
       "Personalized recommendations based on activity",
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1506765515384-028b60a970df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-      "https://images.unsplash.com/photo-1515378791036-0648a3ef77b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      admin1,
+      admin2,
+      admin3,
+      admin4,
+      admin5,
+      admin6,
+      admin7,
+      admin8,
+      admin9,
+      admin10
     ],
   },
+ 
   {
     id: "catlyst-play-book-accedmy",
     title: "Catlyst Play Book Accedmy",
     image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80",
-    description: "A comprehensive lacrosse game website and web application with distinct functionalities for admin and user roles.",
-    technologies: ["Next.js", "Redux-Saga", "TypeScript", "Material-UI (MUI)"],
-    challenges: "Creating distinct modules for admin and user roles while ensuring seamless interaction and scalability.",
-    outcome: "Delivered a user-friendly interface with robust features for game participation, content management, and analytics.",
+    description: "A state-of-the-art learning platform designed for athletes, coaches, and administrators to enhance skill-building, performance tracking, and efficient content management.",
+    technologies: ["Next.js", "Material-UI (MUI)", "Redux Toolkit", "Redux Saga", "Node.js", "Express.js", "MongoDB"],
+    challenges: "Creating a multi-role platform catering to Admin, Coach, and Player functionalities while ensuring seamless interactions, real-time updates, and scalability across devices.",
+    outcome: "Delivered a responsive, modular platform with distinct features for Admins, Coaches, and Players, achieving efficient skill development, team management, and performance tracking.",
     adminFeatures: [
-      "Content management",
-      "User management",
-      "Detailed analytics and reporting tools",
+        "Role-based access control for managing Coaches and Players",
+        "Dynamic content creation and skill module management",
+        "Comprehensive analytics for tracking player and team performance",
+        "Team and user management with real-time updates"
     ],
-    userFeatures: [
-      "Game participation",
-      "Progress tracking",
-      "Personalized recommendations based on activity",
+    coachFeatures: [
+        "Customized training plans for individual players or teams",
+        "Real-time monitoring of player progress and performance",
+        "Scheduling and managing team activities and sessions",
+        "Interactive tools for skill assessment and feedback"
+    ],
+    playerFeatures: [
+        "Access to personalized learning paths and training modules",
+        "Interactive flashcards with Space Repetition Algorithm for enhanced learning",
+        "Progress tracking with gamified elements like badges and leaderboards",
+        "Performance analytics to identify strengths and areas for improvement"
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1506765515384-028b60a970df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-      "https://images.unsplash.com/photo-1515378791036-0648a3ef77b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      c7,
+      c1,
+      c2,
+      c3,
+      c4,
+      c5,
+      c6,
     ],
-  },
+}
+
 ];
 
 export default function ProjectPage() {
@@ -183,7 +234,7 @@ export default function ProjectPage() {
           <div>
             <h2 className="text-2xl font-semibold mb-2">User Features</h2>
             <ul className="list-disc list-inside">
-              {project.userFeatures.map((feature, index) => (
+              {project?.userFeatures?.map((feature, index) => (
                 <li key={index}>{feature}</li>
               ))}
             </ul>
@@ -219,11 +270,14 @@ export default function ProjectPage() {
             </div>
           </div>
           <div>
+         {params.id=='catlyst-play-book-accedmy'? <a href="https://dev-cl-admin.debutinfotech.in/auth/login?returnTo=%2Fadmin%2Fteam%2Flist" target='_blank' className="mb-6 text-white hover:text-orange-500">
+            Click to View App
+          </a>:
           <a href="https://website-uat.laxrecruitdata.com/" target='_blank' className="mb-6 text-white hover:text-orange-500">
-            Click to View Website
-          </a>
+          Click to View Website
+        </a>
+          }
           </div>
-          
         </div>
       </div>
     </div>

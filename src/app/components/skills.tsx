@@ -13,9 +13,9 @@ export function Skills() {
     { name: "Tailwind", percentage: 90 },
     { name: "Redux Toolkit", percentage: 95 },
     { name: "Thunk,Saga", percentage: 95 },
-    { name: "Node js", percentage: 95 },
-    { name: "Express", percentage: 95 },
-    { name: "Mongo Db", percentage: 95 },
+    { name: "Node js", percentage: 55 },
+    { name: "Express", percentage: 55 },
+    { name: "Mongo Db", percentage: 60 },
     { name: "Git", percentage: 80 },
     { name: "Jira", percentage: 90 },
   ];
