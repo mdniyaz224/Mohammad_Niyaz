@@ -1,7 +1,12 @@
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 // import { useRouter } from "next/navigation";
-import img from '../../../public/asset/about.jpg'
+// import img from '../../../public/asset/about.jpg'
+import img from '../../../public/asset/niyaz.png'
+import anu from '../../../public/asset/anu.jpg'
+import akanksha from '../../../public/asset/akanksha.jpg'
+
+
 
 type TeamMember = {
   id: string;
@@ -23,30 +28,30 @@ const teamMembers: TeamMember[] = [
     id: "back-end-developer",
     name: "Anu Priya",
     role: "Back-End Developer",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
+    image: anu?? "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
     bio: "Anu is an expert in server-side development, specializing in APIs, database design, and ensuring robust backend performance."
   },
   {
     id: "digital-marketing-specialist",
     name: "Akansha Priya",
     role: "Digital Marketing Specialist",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
+    image: akanksha ?? "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
     bio: "Akansha specializes in creating impactful digital marketing campaigns, leveraging SEO, content strategy, and analytics to drive engagement."
   },
-  {
-    id: "mobile-developer",
-    name: "Kumar Utkarsh",
-    role: "Mobile & Front-End Developer",
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
-    bio: "Kumar is an experienced Mobile and Front-End Developer focused on creating user-friendly mobile apps and responsive web interfaces using React Native and modern CSS."
-  },
-  {
-    id: "business-analyst",
-    name: "Mohammad Imtiyaz",
-    role: "Business Analyst",
-    image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
-    bio: "Mohammad is a strategic Business Analyst adept at gathering requirements, analyzing market trends, and providing actionable insights to drive business success."
-  },
+  // {
+  //   id: "mobile-developer",
+  //   name: "Kumar Utkarsh",
+  //   role: "Mobile & Front-End Developer",
+  //   image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
+  //   bio: "Kumar is an experienced Mobile and Front-End Developer focused on creating user-friendly mobile apps and responsive web interfaces using React Native and modern CSS."
+  // },
+  // {
+  //   id: "business-analyst",
+  //   name: "Mohammad Imtiyaz",
+  //   role: "Business Analyst",
+  //   image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
+  //   bio: "Mohammad is a strategic Business Analyst adept at gathering requirements, analyzing market trends, and providing actionable insights to drive business success."
+  // },
 ];
 
 // export function MyTeam() {

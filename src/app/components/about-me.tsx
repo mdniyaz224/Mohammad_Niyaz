@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import { useState } from "react"
-import AboutImage from '../../../public/asset/about.jpg'
+// import AboutImage from '../../../public/asset/about.jpg'
+import AboutImage from '../../../public/asset/niyaz.png'
 
 export function AboutMe() {
   const [showMore, setShowMore] = useState(false)
