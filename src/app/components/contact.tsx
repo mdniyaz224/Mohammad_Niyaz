@@ -23,7 +23,7 @@ export function Contact() {
           <div className="flex items-center space-x-4 text-white">
             <Phone className="w-6 h-6 text-orange-500" />
             <div>
-              <p>+0558570571</p>
+              <p>+91 9523990312</p>
             </div>
           </div>
           
@@ -34,7 +34,7 @@ export function Contact() {
           
           <div className="flex items-center space-x-4 text-white">
             <MapPin className="w-6 h-6 text-orange-500" />
-            <p>Dubai, United Arab Emirates</p>
+            <p>New Delhi, India</p>
           </div>
         </div>
 

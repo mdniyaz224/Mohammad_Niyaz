@@ -30,11 +30,11 @@ export function AboutMe() {
 
         <div className="md:w-1/2 space-y-6">
           <h3 className="text-2xl font-semibold text-white">
-            Full Stack Developer
+          Frontend Developer
           </h3>
           
           <p className="text-white/80">
-            I am Mohammad Niyaz, an accomplished Full Stack Developer with 3 years of experience in creating scalable web and mobile applications.
+            I am Mohammad Niyaz, an accomplished Frontend Developer with 3 years of experience in creating scalable web and mobile applications.
             My expertise spans frontend technologies like React.js, Next.js, and TypeScript, and backend frameworks such as Node.js and Express.js,
             complemented by robust database management skills in MongoDB and SQL Server.
             With a strong focus on mobile-first development and localization for Arabic and English markets, 

@@ -20,9 +20,9 @@ const teamMembers: TeamMember[] = [
   {
     id: "full-stack-developer",
     name: "Mohammad Niyaz",
-    role: "Full Stack Developer",
+    role: "Frontend Developer",
     image: img,
-    bio: "Mohammad is a skilled Full Stack Developer proficient in building scalable web and mobile applications using modern frameworks like React, Node.js, and MongoDB."
+    bio: "Mohammad is a skilled Frontend Developer proficient in building scalable web and mobile applications using modern frameworks like React, Node.js, and MongoDB."
   },
   {
     id: "back-end-developer",

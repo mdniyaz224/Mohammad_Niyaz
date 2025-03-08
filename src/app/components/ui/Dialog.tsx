@@ -49,7 +49,7 @@ export function DialogDemo(props: { open: boolean; setOpen:any; }) {
                 onClick={handleCall}
                 className="text-blue-600 hover:underline focus:outline-none"
               >
-                +0558570571
+                +91 9523990312
               </button>
             </div>
           </div>

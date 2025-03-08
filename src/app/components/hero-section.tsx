@@ -16,7 +16,7 @@ export function HeroSection() {
         <h1 className="text-white text-5xl md:text-6xl font-bold">Md Niyaz</h1>
         <p className="text-2xl text-white md:text-3xl">
           And I&apos;m a{" "}
-          <span className="text-orange-500">Full Stack Developer</span>
+          <span className="text-orange-500">Frontend Developer</span>
         </p>
         <p className="text-white/80 max-w-lg">
           Designing intuitive interfaces with precision.
