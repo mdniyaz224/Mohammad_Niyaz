@@ -1,3 +1,4 @@
+/* eslint-disable prefer-const */
 "use client";
 
 import React, { ReactNode, useEffect, useRef } from "react";
@@ -236,5 +237,5 @@ export const CoolMode: React.FC<CoolModeProps> = ({ children, options }) => {
     }
   }, [options]);
 
-  return React.cloneElement(children as React.ReactElement, { ref });
+  return React.cloneElement(children as React.ReactElement, {  });
 };
