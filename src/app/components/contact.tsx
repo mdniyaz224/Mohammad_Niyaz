@@ -41,34 +41,40 @@ export function Contact() {
         <form onSubmit={handleSubmit} className="space-y-4">
           <Input
             placeholder="Full Name"
-            className="bg-purple-800/50 border-purple-700 text-white placeholder:text-white/70"
+            style={{background:'000814',border:'000814'}}
+
+            className="text-white placeholder:text-white/70"
             required
           />
           <Input
             type="email"
+            style={{background:'000814',border:'000814'}}
             placeholder="Email Address"
-            className="bg-purple-800/50 border-purple-700 text-white placeholder:text-white/70"
+            className=" text-white placeholder:text-white/70"
             required
           />
           <div className="grid grid-cols-2 gap-4">
             <Input
               type="tel"
+              style={{background:'000814',border:'000814'}}
               placeholder="Phone Number"
-              className="bg-purple-800/50 border-purple-700 text-white placeholder:text-white/70"
+              className=" text-white placeholder:text-white/70"
             />
             <Input
               placeholder="Subject"
-              className="bg-purple-800/50 border-purple-700 text-white placeholder:text-white/70"
+              style={{background:'000814',border:'000814'}}
+              className=" text-white placeholder:text-white/70"
             />
           </div>
           <Textarea
             placeholder="Your Message"
-            className="bg-purple-800/50 border-purple-700 text-white placeholder:text-white/70 min-h-[150px]"
+            style={{background:'000814',border:'000814'}}
+            className=" text-white placeholder:text-white/70 min-h-[180px]"
             required
           />
           <Button 
             type="submit"
-            className="bg-purple-800/50 hover:bg-purple-700 text-white w-24"
+            className="bg-black hover:bg-white hover:text-black text-white w-24 "
           >
             Send
           </Button>

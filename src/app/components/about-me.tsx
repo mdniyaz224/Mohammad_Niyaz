@@ -3,6 +3,7 @@ import Image from "next/image"
 import { useState } from "react"
 // import AboutImage from '../../../public/asset/about.jpg'
 import AboutImage from '../../../public/asset/niyaz.png'
+import { CoolMode } from "@/components/magicui/cool-mode"
 
 export function AboutMe() {
   const [showMore, setShowMore] = useState(false)
@@ -30,14 +31,14 @@ export function AboutMe() {
 
         <div className="md:w-1/2 space-y-6">
           <h3 className="text-2xl font-semibold text-white">
-          Frontend Developer
+            Frontend Developer
           </h3>
-          
+
           <p className="text-white/80">
             I am Mohammad Niyaz, an accomplished Frontend Developer with 3 years of experience in creating scalable web and mobile applications.
             My expertise spans frontend technologies like React.js, Next.js, and TypeScript, and backend frameworks such as Node.js and Express.js,
             complemented by robust database management skills in MongoDB and SQL Server.
-            With a strong focus on mobile-first development and localization for Arabic and English markets, 
+            With a strong focus on mobile-first development and localization for Arabic and English markets,
             I am adept at delivering solutions optimized for performance and user engagement.
           </p>
 
@@ -51,14 +52,17 @@ export function AboutMe() {
               </p>
             </div>
           )}
+          <CoolMode>
 
-          <Button
-            variant="outline"
-            className="bg-white text-purple-900 hover:bg-white/90"
-            onClick={() => setShowMore(!showMore)}
-          >
-            {showMore ? "Show Less" : "Read More..."}
-          </Button>
+            <Button
+              variant="outline"
+              className="bg-white text-purple-900 hover:bg-white/90"
+              onClick={() => setShowMore(!showMore)}
+            >
+              {showMore ? "Show Less" : "Read More..."}
+            </Button>
+          </CoolMode>
+
         </div>
       </div>
     </section>

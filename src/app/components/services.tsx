@@ -1,3 +1,4 @@
+import { BorderBeam } from "@/components/magicui/border-beam"
 import { Card, CardContent } from "@/components/ui/card"
 import { Laptop, Smartphone, BarChart3 } from 'lucide-react'
 
@@ -54,7 +55,7 @@ export function Services() {
         {services.map((service, index) => (
           <Card
             key={index}
-            className="bg-white rounded-xl shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-xl hover:rotate-2"
+            className="bg-white  rounded-xl shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-xl hover:rotate-2"
           >
             <CardContent className="p-6 text-center">
               <div className="flex justify-center mb-4">
@@ -65,8 +66,13 @@ export function Services() {
               </h3>
               <p className="text-gray-600">{service.description}</p>
             </CardContent>
+            <BorderBeam duration={3} size={100} 
+            className="h-40 w-40"
+            />
           </Card>
+          
         ))}
+        
       </div>
     </section>
   )

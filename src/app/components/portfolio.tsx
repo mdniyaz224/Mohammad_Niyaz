@@ -2,6 +2,7 @@ import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { ExternalLink } from 'lucide-react'
 import { useRouter } from "next/navigation"
+import { BorderBeam } from "@/components/magicui/border-beam"
 
 
 export function Portfolio() {
@@ -61,7 +62,7 @@ export function Portfolio() {
           <Card 
             key={index} 
             onClick={()=>route.push(`project/${project.id}`)}
-            className="group relative overflow-hidden rounded-xl bg-purple-800/50 border-0  cursor-pointer"
+            className="group relative overflow-hidden rounded-xl bg-white border-0  cursor-pointer"
           >
             <CardContent className="p-0">
               <div className="relative aspect-[4/3]">
@@ -71,7 +72,7 @@ export function Portfolio() {
                   fill
                   className="object-cover transition-transform group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-purple-900/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   <div className="text-center text-white p-4">
                     <ExternalLink className="w-6 h-6 mx-auto mb-2" />
                     <h3 className="text-lg font-semibold">{project.title}</h3>
@@ -79,10 +80,12 @@ export function Portfolio() {
                 </div>
               </div>
             </CardContent>
+            <BorderBeam duration={3} size={100} />
           </Card>
         ))}
       </div>
     </section>
   )
 }
+
 

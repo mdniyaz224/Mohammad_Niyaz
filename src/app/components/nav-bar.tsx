@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { DialogDemo } from "./ui/Dialog";
+import { CoolMode } from "@/components/magicui/cool-mode";
 
 const useScrollDirection = () => {
   const [scrollDirection, setScrollDirection] = useState("up");
@@ -92,7 +93,8 @@ export function NavBar() {
 
   return (
     <nav
-      className={`sticky top-0 left-0 right-0 z-50 bg-purple-900/80 backdrop-blur-sm transition-all duration-300`}
+    style={{background:'000814'}}
+      className={`sticky top-0 left-0 right-0 z-50  backdrop-blur-sm transition-all duration-300`}
     >
       <div className="flex items-center justify-between p-4 w-full max-w-7xl mx-auto">
         <Link href="/" className="text-white text-2xl font-bold">
@@ -126,16 +128,18 @@ export function NavBar() {
             </SheetTrigger>
             <SheetContent
               side="right"
-              className="w-[300px] sm:w-[400px] bg-purple-900 text-white"
+              className="w-[300px] sm:w-[400px] bg-black text-white"
             >
               <nav className="flex flex-col space-y-4 mt-8">
+                <CoolMode>
                 <Button
                   variant="outline"
-                  className="bg-white text-purple-900 hover:bg-white/90  md:inline-flex"
+                  className="bg-white text-white hover:bg-white/90  md:inline-flex"
                   onClick={() => setOpen(true)}
                 >
                   Hire me
                 </Button>
+                </CoolMode>
                 {navItems.map((item) => (
                   <button
                     key={item}
@@ -155,7 +159,7 @@ export function NavBar() {
 
         <Button
           variant="outline"
-          className="bg-white text-purple-900 hover:bg-white/90 hidden md:inline-flex"
+          className="bg-white text-black hover:bg-white/90 hover:text-black hidden md:inline-flex"
           onClick={() => setOpen(true)}
         >
           Hire me
