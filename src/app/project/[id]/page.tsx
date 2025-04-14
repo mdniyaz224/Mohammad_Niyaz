@@ -181,7 +181,7 @@ export default function ProjectPage() {
   }
 
   return (
-    <div className="min-h-screen bg-purple-900 py-16 px-4">
+    <div className="min-h-screen bg-black py-16 px-4">
       <div className="max-w-4xl mx-auto">
         <Link href="/#portfolio">
           <Button variant="ghost" className="mb-6 text-white hover:text-orange-500">

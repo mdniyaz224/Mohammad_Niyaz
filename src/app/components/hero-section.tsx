@@ -1,5 +1,47 @@
+import { BorderBeam } from '@/components/magicui/border-beam';
+import { CoolMode } from '@/components/magicui/cool-mode';
+import { IconCloud } from '@/components/magicui/icon-cloud'
+import { LineShadowText } from '@/components/magicui/line-shadow-text';
+import { useTheme } from "next-themes";
+
 import { Facebook, Instagram, Linkedin, Github, ChevronDown } from 'lucide-react'
-import Image from "next/image"
+// import Image from "next/image"
+// import { IconCloud } from "@/registry/magicui/icon-cloud";
+
+const slugs = [
+  "typescript",
+  "javascript",
+  "dart",
+  "java",
+  "react",
+  "flutter",
+  "android",
+  "html5",
+  "css3",
+  "nodedotjs",
+  "express",
+  "nextdotjs",
+  "prisma",
+  "amazonaws",
+  "postgresql",
+  "firebase",
+  "nginx",
+  "vercel",
+  "testinglibrary",
+  "jest",
+  "cypress",
+  "docker",
+  "git",
+  "jira",
+  "github",
+  "gitlab",
+  "visualstudiocode",
+  "androidstudio",
+  "sonarqube",
+  "figma",
+];
+
+
 
 export function HeroSection() {
   const scrollToAbout = () => {
@@ -8,6 +50,11 @@ export function HeroSection() {
       aboutSection.scrollIntoView({ behavior: 'smooth' })
     }
   }
+  const images = slugs.map(
+    (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`,
+  );
+  const theme = useTheme();
+  const shadowColor = theme.resolvedTheme === "dark" ? "white" : "black";
 
   return (
     <div className="flex flex-col md:flex-row items-center justify-between px-4 py-24 w-full max-w-7xl mx-auto min-h-screen">
@@ -16,7 +63,13 @@ export function HeroSection() {
         <h1 className="text-white text-5xl md:text-6xl font-bold">Md Niyaz</h1>
         <p className="text-2xl text-white md:text-3xl">
           And I&apos;m a{" "}
-          <span className="text-orange-500">Frontend Developer</span>
+        
+          <span className="text-orange-500">
+          <LineShadowText className="italic" shadowColor={shadowColor}>
+            Frontend Developer
+            </LineShadowText>
+            </span>
+          
         </p>
         <p className="text-white/80 max-w-lg">
           Designing intuitive interfaces with precision.
@@ -35,8 +88,10 @@ export function HeroSection() {
           </a>
           <a href="#" className="text-white hover:text-orange-500 transition-colors">
             <Instagram className="w-6 h-6" />
+            
           </a>
         </div>
+        <CoolMode>
 
         <a
           href="/asset/latestcv.pdf"
@@ -44,29 +99,37 @@ export function HeroSection() {
           className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded inline-flex justify-center items-center transition-colors"
         >
           Download CV
+
         </a>
-
+        </CoolMode>
 
       </div>
 
-      <div className="md:w-1/2 mt-8 md:mt-0" data-aos="fade-left">
-        <Image
-          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80"
-          alt="Development illustration"
-          width={500}
-          height={400}
-          className="w-full h-auto rounded-lg shadow-lg"
-          priority
-        />
-      </div>
 
+      <div className="relative flex size-full max-w-lg items-center justify-center overflow-hidden bg-background">
+        <IconCloud images={images} />
+      </div>
+      <CoolMode>
       <button
         onClick={scrollToAbout}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce"
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce rounded-full p-1"
         aria-label="Scroll to About section"
       >
         <ChevronDown className="w-8 h-8" />
+        <BorderBeam
+          size={40}
+          initialOffset={20}
+          className="from-transparent via-yellow-500 to-transparent"
+          transition={{
+            type: "spring",
+            stiffness: 60,
+            damping: 20,
+          }}
+        />
+
       </button>
+      </CoolMode>
+
     </div>
   )
 }

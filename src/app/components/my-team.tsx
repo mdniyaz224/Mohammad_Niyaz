@@ -106,10 +106,11 @@ export function MyTeam() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
         {teamMembers.map((member) => (
           <Card
             key={member.id}
-            className="bg-purple-800/50 border-purple-700 overflow-hidden group cursor-pointer"
+            className="bg-black border-black overflow-hidden group cursor-pointer"
           >
             <CardContent className="p-0">
               <div className="relative h-80">
@@ -123,7 +124,7 @@ export function MyTeam() {
                 <div
                   className="
                     absolute inset-0 bg-gradient-to-t 
-                    from-purple-900 to-transparent 
+                    from-black to-transparent 
                     opacity-100 md:opacity-0 md:group-hover:opacity-100 
                     transition-opacity duration-300
                   "

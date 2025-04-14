@@ -23,7 +23,9 @@ export default function Home() {
   }, [])
 
   return (
-    <main className="min-h-screen bg-purple-900 pt-8">
+    <main className="min-h-screen  pt-8"
+    style={{background:'252422'}}
+    >
       <NavBar />
       <section id="home">
         <HeroSection />

@@ -39,7 +39,7 @@ export function Skills() {
           
             <Progress
               value={skill.percentage}
-              className="h-2 bg-purple-800 [&>div]:bg-orange-500"
+              className="h-2 bg-white [&>div]:bg-orange-500"
               aria-label={`${skill.name} skill level`}
             />
           </div>
