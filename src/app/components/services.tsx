@@ -6,39 +6,39 @@ export function Services() {
   const services = [
     {
       icon: <Laptop className="w-12 h-12 text-orange-500" />,
-      title: "Web Development",
+      title: "Full-Stack Web Development",
       description:
-        "I specialize in building scalable, responsive websites using cutting-edge technologies like React.js, Next.js, and Node.js. Whether it's a dynamic web app or a static site, I provide robust solutions tailored to your business needs.",
+        "Design and build end-to-end web applications using React.js, Next.js, Node.js, Express.js, MongoDB, and PostgreSQL for scalable business solutions.",
     },
     {
       icon: <Smartphone className="w-12 h-12 text-orange-500" />,
-      title: "Apps Development",
+      title: "Frontend Engineering",
       description:
-        "With expertise in React Native, I develop high-quality mobile applications that work seamlessly across both iOS and Android. From intuitive interfaces to performance optimization, I deliver apps that engage users and enhance functionality.",
+        "Create responsive, high-performance interfaces with React.js, Next.js, TypeScript, Redux Toolkit, and UI libraries like Tailwind, MUI, and Mantine.",
     },
     {
       icon: <BarChart3 className="w-12 h-12 text-orange-500" />,
-      title: "API Integration & Backend Services",
+      title: "Backend & API Development",
       description:
-        "I design and develop RESTful APIs using Node.js, Express.js, and MongoDB. With my full-stack knowledge, I ensure smooth communication between the frontend and backend, providing scalable, secure, and efficient solutions.",
+        "Develop secure REST APIs, database integrations, and business logic for enterprise platforms, internal systems, and modern web products.",
     },
     {
       icon: <Laptop className="w-12 h-12 text-orange-500" />,
-      title: "Full Stack Development",
+      title: "ERP & Enterprise Applications",
       description:
-        "I offer comprehensive full-stack development services, working across the entire web and mobile tech stack. My expertise includes frontend frameworks (React.js, Next.js), backend technologies (Node.js, Express), and databases (MongoDB, SQL Server).",
+        "Deliver workflow-driven platforms for automotive, aviation, logistics, and operations with multi-module architecture and streamlined processes.",
     },
     {
       icon: <Smartphone className="w-12 h-12 text-orange-500" />,
-      title: "WordPress Development",
+      title: "Cloud Deployment & DevOps",
       description:
-        "I build custom WordPress websites that are fully responsive, user-friendly, and optimized for performance. Whether you need a blog, e-commerce site, or a custom theme, I provide scalable WordPress solutions that fit your business goals.",
+        "Deploy and maintain applications on AWS, DigitalOcean, Nginx, Docker, and CI/CD pipelines to ensure reliable release cycles and uptime.",
     },
     {
       icon: <Laptop className="w-12 h-12 text-orange-500" />,
       title: "Performance Optimization",
       description:
-        "I enhance the speed, efficiency, and scalability of web and mobile applications by implementing best practices such as code splitting, lazy loading, and SEO optimization, ensuring your app runs smoothly under high traffic.",
+        "Improve speed, maintainability, and SEO through code splitting, lazy loading, clean architecture, and thoughtful user experience design.",
     },
   ]
 

@@ -9,7 +9,6 @@ import { AboutMe } from "./components/about-me"
 import { Services } from "./components/services"
 import { Skills } from "./components/skills"
 import { Portfolio } from "./components/portfolio"
-import { MyTeam } from "./components/my-team"
 // import { ClientTestimonials } from "./components/client-testimonials"
 import { Contact } from "./components/contact"
 import { Footer } from "./components/footer"
@@ -41,9 +40,6 @@ export default function Home() {
       </section>
       <section id="portfolio" data-aos="fade-up">
         <Portfolio />
-      </section>
-      <section id="team" data-aos="fade-up">
-        <MyTeam />
       </section>
       {/* <section id="testimonials" data-aos="fade-up">
         <ClientTestimonials />

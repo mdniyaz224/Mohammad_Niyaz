@@ -59,21 +59,18 @@ export function HeroSection() {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between px-4 py-24 w-full max-w-7xl mx-auto min-h-screen">
       <div className="space-y-6 md:w-1/2" data-aos="fade-right">
-        <p className="text-white text-xl">Hi, It&apos;s me</p>
-        <h1 className="text-white text-5xl md:text-6xl font-bold">Md Niyaz</h1>
+        <p className="text-white text-xl">Hello, I&apos;m</p>
+        <h1 className="text-white text-5xl md:text-6xl font-bold">Mohammad Niyaz</h1>
         <p className="text-2xl text-white md:text-3xl">
           And I&apos;m a{" "}
-        
           <span className="text-orange-500">
-          <LineShadowText className="italic" shadowColor={shadowColor}>
-            Frontend Developer
+            <LineShadowText className="italic" shadowColor={shadowColor}>
+              Full-Stack Engineer
             </LineShadowText>
-            </span>
-          
+          </span>
         </p>
         <p className="text-white/80 max-w-lg">
-          Designing intuitive interfaces with precision.
-          Crafting seamless user experiences with passion.
+          I build scalable web applications with React, Next.js, Node.js, TypeScript, and cloud-ready architecture for modern businesses.
         </p>
 
         <div className="flex space-x-4">
@@ -94,12 +91,11 @@ export function HeroSection() {
         <CoolMode>
 
         <a
-          href="/asset/latestcv.pdf"
+          href="/asset/latestcv.pdf?v=2"
           download="Md_Niyaz_CV.pdf"
           className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded inline-flex justify-center items-center transition-colors"
         >
           Download CV
-
         </a>
         </CoolMode>
 
@@ -111,6 +107,7 @@ export function HeroSection() {
       </div>
       <CoolMode>
       <button
+        type="button"
         onClick={scrollToAbout}
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce rounded-full p-1"
         aria-label="Scroll to About section"
