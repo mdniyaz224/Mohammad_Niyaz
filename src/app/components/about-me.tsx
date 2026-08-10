@@ -31,24 +31,22 @@ export function AboutMe() {
 
         <div className="md:w-1/2 space-y-6">
           <h3 className="text-2xl font-semibold text-white">
-            Frontend Developer
+            Full-Stack Engineer
           </h3>
 
           <p className="text-white/80">
-            I am Mohammad Niyaz, an accomplished Frontend Developer with 3 years of experience in creating scalable web and mobile applications.
-            My expertise spans frontend technologies like React.js, Next.js, and TypeScript, and backend frameworks such as Node.js and Express.js,
-            complemented by robust database management skills in MongoDB and SQL Server.
-            With a strong focus on mobile-first development and localization for Arabic and English markets,
-            I am adept at delivering solutions optimized for performance and user engagement.
+            I am Mohammad Niyaz, a Full-Stack Engineer with 3.8 years of experience building scalable web applications using React.js, Next.js, Node.js, Express.js, TypeScript, MongoDB, PostgreSQL, Redux, and REST APIs.
+            My work spans enterprise platforms, ERP solutions, and modern web products, with hands-on experience in AWS, Docker, CI/CD, Nginx, and DigitalOcean.
+            I focus on creating high-performance, maintainable applications that deliver strong user experience and business value.
           </p>
 
           {showMore && (
             <div className="text-white/80 space-y-4">
               <p>
-                I thrive in dynamic environments, having successfully developed innovative projects such as a Rugby training app using the Space Repetition Algorithm and a lacrosse game platform with tailored admin and user functionalities. My experience includes collaboration with cross-functional teams, API integration, and leveraging advanced tools like Redux Toolkit and Material-UI for seamless state management and design consistency.
+                I have contributed to projects across the automotive, aviation, and education sectors, including ERP platforms for Cruise Motors and aviation operations, as well as learning and sports platforms for Catalyst Playbook Academy and Lacrosse.
               </p>
               <p>
-                I am passionate about bridging the gap between technology and business needs, ensuring user-centric solutions that align with strategic objectives. My commitment to excellence, coupled with my technical acumen and adaptability, drives me to deliver impactful digital experiences for clients and end-users alike.
+                I enjoy collaborating with design, backend, and QA teams to deliver production-ready features in Agile environments while keeping the product reliable, scalable, and user-focused.
               </p>
             </div>
           )}

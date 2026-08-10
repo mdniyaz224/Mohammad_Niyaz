@@ -25,7 +25,7 @@ const useScrollDirection = () => {
     const updateScrollDirection = () => {
       const scrollY = window.pageYOffset;
       toggleScrollDirection(scrollY);
-      lastScrollY = scrollY > 0 ? scrollY : 0;
+      lastScrollY = Math.max(scrollY, 0);
     };
     window.addEventListener("scroll", updateScrollDirection);
     return () => {
@@ -51,7 +51,6 @@ export function NavBar() {
         "services",
         "skills",
         "portfolio",
-        "team",
         "contact",
       ];
       const scrollPosition = window.scrollY + 100; // offset
@@ -87,7 +86,6 @@ export function NavBar() {
     "Services",
     "Skills",
     "Portfolio",
-    "Team",
     "Contact",
   ];
 
@@ -105,6 +103,7 @@ export function NavBar() {
           {navItems?.map((item) => (
             <button
               key={item}
+              type="button"
               onClick={() => scrollToSection(item.toLowerCase())}
               className={cn(
                 "text-white hover:text-white/80 transition-colors relative",
@@ -143,6 +142,7 @@ export function NavBar() {
                 {navItems.map((item) => (
                   <button
                     key={item}
+                    type="button"
                     onClick={() => scrollToSection(item.toLowerCase())}
                     className={cn(
                       "text-white hover:text-orange-500 transition-colors text-left text-lg py-2",

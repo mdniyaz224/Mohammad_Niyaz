@@ -9,23 +9,23 @@ export function Portfolio() {
   const route= useRouter()
   const projects = [
     {
-      id:"lacrosse-website",
-      title: "Lacross Website",
+      id:"cruise-motors-erp",
+      title: "ERP Application - Cruise Motors",
       image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80",
     },
     {
-      id:"lacrosse-user",
-      title: "Lacross User App",
+      id:"aviation-erp",
+      title: "Aviation ERP Platform",
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80",
     },
     {
-      id:"lacrosse-admin",
-      title: "Lacross Admin App",
+      id:"lacrosse-platform",
+      title: "Lacrosse Platform",
       image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1174&q=80",
     },
     {
-      id:"catlyst-play-book-accedmy",
-      title: "Catlyst Play Book Accedmy",
+      id:"catalyst-playbook-academy",
+      title: "Catalyst Playbook Academy",
       image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80",
     },
     // {

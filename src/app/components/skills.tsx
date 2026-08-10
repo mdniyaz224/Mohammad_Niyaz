@@ -2,22 +2,21 @@ import { Progress } from "@/components/ui/progress";
 
 export function Skills() {
   const skills = [
-    { name: "HTML - 5", percentage: 95 },
-    { name: "CSS - 3", percentage: 90 },
-    { name: "JavaScript", percentage: 80 },
-    { name: "React js", percentage: 95 },
-    { name: "Next js", percentage: 95 },
-    { name: "Wordpress", percentage: 90 },
-    { name: "Bootstrap", percentage: 95 },
-    { name: "MUI", percentage: 95 },
-    { name: "Tailwind", percentage: 90 },
-    { name: "Redux Toolkit", percentage: 95 },
-    { name: "Thunk,Saga", percentage: 95 },
-    { name: "Node js", percentage: 40 },
-    { name: "Express", percentage: 40 },
-    { name: "Mongo Db", percentage: 40 },
-    { name: "Git", percentage: 80 },
-    { name: "Jira", percentage: 90 },
+    { name: "React.js", percentage: 95 },
+    { name: "Next.js", percentage: 95 },
+    { name: "TypeScript", percentage: 90 },
+    { name: "JavaScript (ES6+)", percentage: 90 },
+    { name: "Node.js", percentage: 85 },
+    { name: "Express.js", percentage: 80 },
+    { name: "MongoDB", percentage: 80 },
+    { name: "PostgreSQL", percentage: 75 },
+    { name: "Redux Toolkit", percentage: 90 },
+    { name: "REST APIs", percentage: 90 },
+    { name: "Tailwind / MUI / Mantine", percentage: 90 },
+    { name: "AWS / DigitalOcean", percentage: 70 },
+    { name: "Docker / CI-CD", percentage: 70 },
+    { name: "Git / GitHub / GitLab", percentage: 90 },
+    { name: "Jira / Agile", percentage: 90 },
   ];
 
   return (
