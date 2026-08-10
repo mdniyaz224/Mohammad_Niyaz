@@ -91,7 +91,7 @@ export function HeroSection() {
         <CoolMode>
 
         <a
-          href="/asset/latestcv.pdf?v=2"
+          href="/asset/latestcv.pdf"
           download="Md_Niyaz_CV.pdf"
           className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded inline-flex justify-center items-center transition-colors"
         >
